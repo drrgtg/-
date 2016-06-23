@@ -1,0 +1,13 @@
+//
+//  PrefixHeader.pch
+//  AudioRecordingAnd...
+//
+//  Created by FeZo on 16/6/23.
+//  Copyright © 2016年 FezoLsp. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+
+#endif /* PrefixHeader_pch */

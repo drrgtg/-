@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-Mv-H4z">
+                                <rect key="frame" x="255" y="201" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.70196078429999997" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="播放本地音频">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EH5-AW-kIA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqs-K6-x7f">
+                                <rect key="frame" x="249" y="284" width="102" height="33"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.70196078429999997" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放短效音频">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecQ-jg-fg0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDA-Hw-N5p">
+                                <rect key="frame" x="249" y="360" width="103" height="30"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.70196078429999997" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="录音">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7G-3P-P6V"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-ba-NMU">
+                                <rect key="frame" x="144" y="418" width="312" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="8ZO-x3-YJC"/>
+                                    <constraint firstAttribute="width" constant="312" id="PW2-rv-r4o"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.1852401014" green="0.77885716620000001" blue="0.0430097256" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOM-ng-ZVq">
+                                <rect key="frame" x="362" y="360" width="30" height="30"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stopRecorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJD-u0-fX8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SO-cW-H2j">
+                                <rect key="frame" x="255" y="141" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.70196078429999997" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="音频队列">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut3-ed-OEF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GDA-Hw-N5p" firstAttribute="leading" secondItem="rqs-K6-x7f" secondAttribute="leading" id="1bz-H9-v54"/>
+                            <constraint firstItem="5jk-ba-NMU" firstAttribute="centerX" secondItem="GDA-Hw-N5p" secondAttribute="centerX" id="5Wk-hG-6zW"/>
+                            <constraint firstItem="eOM-ng-ZVq" firstAttribute="leading" secondItem="GDA-Hw-N5p" secondAttribute="trailing" constant="10" id="D8X-7m-Dxc"/>
+                            <constraint firstItem="jvx-Mv-H4z" firstAttribute="leading" secondItem="rqs-K6-x7f" secondAttribute="trailing" constant="-118" id="Dit-L8-7T4"/>
+                            <constraint firstItem="jvx-Mv-H4z" firstAttribute="centerX" secondItem="rqs-K6-x7f" secondAttribute="centerX" id="Ezr-Pm-vRr"/>
+                            <constraint firstItem="GDA-Hw-N5p" firstAttribute="centerX" secondItem="rqs-K6-x7f" secondAttribute="centerX" id="Prn-0S-ldk"/>
+                            <constraint firstItem="GDA-Hw-N5p" firstAttribute="top" secondItem="rqs-K6-x7f" secondAttribute="bottom" constant="43" id="d1W-FQ-8ky"/>
+                            <constraint firstItem="eOM-ng-ZVq" firstAttribute="centerY" secondItem="GDA-Hw-N5p" secondAttribute="centerY" id="elf-O3-h4X"/>
+                            <constraint firstItem="rqs-K6-x7f" firstAttribute="top" secondItem="jvx-Mv-H4z" secondAttribute="bottom" constant="53" id="fe4-1B-n7y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5jk-ba-NMU" secondAttribute="bottom" constant="174" id="fuk-xg-bvL"/>
+                            <constraint firstItem="5jk-ba-NMU" firstAttribute="top" secondItem="GDA-Hw-N5p" secondAttribute="bottom" constant="28" id="gsd-Vz-UTP"/>
+                            <constraint firstItem="rqs-K6-x7f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4F-we-Wa1"/>
+                            <constraint firstItem="4SO-cW-H2j" firstAttribute="height" secondItem="jvx-Mv-H4z" secondAttribute="height" id="ioo-hh-hnl"/>
+                            <constraint firstItem="jvx-Mv-H4z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kIU-5A-gpJ"/>
+                            <constraint firstItem="jvx-Mv-H4z" firstAttribute="top" secondItem="4SO-cW-H2j" secondAttribute="bottom" constant="30" id="t4m-oD-5K7"/>
+                            <constraint firstItem="4SO-cW-H2j" firstAttribute="centerX" secondItem="jvx-Mv-H4z" secondAttribute="centerX" id="vAV-2o-QkU"/>
+                            <constraint firstItem="rqs-K6-x7f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ws2-Ii-dH8"/>
+                            <constraint firstItem="4SO-cW-H2j" firstAttribute="width" secondItem="jvx-Mv-H4z" secondAttribute="width" id="xXn-YK-TVy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dit-L8-7T4"/>
+                                <exclude reference="kIU-5A-gpJ"/>
+                                <exclude reference="fuk-xg-bvL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="5jk-ba-NMU" id="zd5-s2-cE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="351"/>
+        </scene>
+    </scenes>
+</document>
